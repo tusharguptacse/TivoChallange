@@ -1,0 +1,25 @@
+/* basic positioning */
+.legend { display: inline-block;  list-style: none; }
+.legend li { float: left; margin-right: 10px; }
+.legend span { border: 1px solid #ccc; float: left; width: 12px; height: 12px; margin: 2px; }
+/* your colors */
+.legend .superawesome { background-color: rgba(255,99,132,.2); }
+.legend .awesome { background-color: rgba(54, 162, 235, 0.2); }
+.legend .kindaawesome { background-color: rgba(255, 206, 86, 0.2); }
+.legend .notawesome { background-color: rgba(75, 192, 192, 0.2); }
+.legend .percentage { background-color: rgba(153,255,51,0.4);}
+.legend .inactive {border-width: 2px; border-color: rgba(0,0,0,1); }
+.ui-datepicker-calendar {
+    display: none;
+}
+#legendDiv{
+    display: none;
+    margin: 40px;
+}
+#secDiv{
+    display: none;
+    margin: 20px;
+}
+/*#secChart{*/
+    /*margin-top: 10px;*/
+/*}*/

@@ -3,18 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <script src="my.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.0.0-alpha3/Chart.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.css" rel="stylesheet">
+
 </head>
 <body>
 <div class="container">
-    <h2>Chart.js — Line Chart Demo</h2>
+    <h2> Data Visualization - TIVO </h2>
+    <div class="text-center">
+        <label for="startDate"> Pick Date : </label>
+        <input name="startDate" id="startDate" class="date-picker"/>
+    </div>
+    <div class="text-center" id="legendDiv">
+        <ul class="legend ">
+            <li><span class="superawesome"></span> Robert </li>
+            <li><span class="awesome"></span> Orange </li>
+            <li><span class="kindaawesome"></span> Volt </li>
+            <li><span class="notawesome"></span> Ink </li>
+            <li><span class="inactive"></span> Inactive </li>
+        </ul>
+    </div>
     <div>
         <canvas id="myChart"></canvas>
     </div>
-</div>
+    <div class="text-center" id="secDiv">
+       <hr/>
 
+        <ul class="legend">
+            <li><span class="percentage"></span> Percentage </li>
+        </ul>
+    </div>
+    <div id="secChart">
+        <canvas id="mySecondaryChart"></canvas>
+    </div>
+</div>
 <script src="my.js"></script>
 </body>
-</html> 
+</html>
+
